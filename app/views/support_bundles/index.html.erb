@@ -1,0 +1,25 @@
+<h1>Listing support_bundles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @support_bundles.each do |support_bundle| %>
+      <tr>
+        <td><%= link_to 'Show', support_bundle %></td>
+        <td><%= link_to 'Edit', edit_support_bundle_path(support_bundle) %></td>
+        <td><%= link_to 'Destroy', support_bundle, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Support bundle', new_support_bundle_path %>
