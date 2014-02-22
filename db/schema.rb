@@ -11,11 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140222074439) do
+ActiveRecord::Schema.define(version: 20140222100246) do
 
   create_table "support_bundles", force: true do |t|
-    t.datetime "created_at"
+    t.datetime "bundled_at"
     t.datetime "updated_at"
+    t.string   "uid"
+    t.datetime "date_created"
+    t.string   "firmware_revision"
+    t.text     "description"
+    t.string   "environment"
+    t.text     "problems"
   end
 
 end
