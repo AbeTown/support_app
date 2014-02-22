@@ -11,7 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140222100246) do
+ActiveRecord::Schema.define(version: 20140222102724) do
+
+  create_table "companies", force: true do |t|
+    t.string   "name"
+    t.integer  "num_endboxes"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "support_bundles", force: true do |t|
     t.datetime "bundled_at"
