@@ -4,7 +4,8 @@ class CreateCompanies < ActiveRecord::Migration
       t.string :name
       t.integer :num_endboxes
       t.text :description
-
+      t.integer :support_bundle_id
+      
       t.timestamps
     end
   end

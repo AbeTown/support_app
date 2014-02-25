@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20140222102724) do
     t.string   "name"
     t.integer  "num_endboxes"
     t.text     "description"
+    t.integer  "support_bundle_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
